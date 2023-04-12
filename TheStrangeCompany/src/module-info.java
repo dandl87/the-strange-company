@@ -6,4 +6,5 @@
  *
  */
 module TheStrangeCompany {
+	requires java.sql;
 }
