@@ -49,7 +49,7 @@ public class ProjectDAOimpl implements ProjectDAO{
 		ResultSet rs; 
 				
 				try {
-				String query = "SELECT * FROM project WHERE project_code = '" + projectCode +"';";
+				String query = "SELECT * FROM project WHERE code = '" + projectCode +"';";
 				
 				PreparedStatement ps = mySqlConnection.getConnection().prepareStatement(query);
 				
@@ -71,6 +71,7 @@ public class ProjectDAOimpl implements ProjectDAO{
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block 
 					System.out.println("Errore accesso a db!");
+					e.printStackTrace();
 					return null;
 				}
 	}

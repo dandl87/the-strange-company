@@ -10,11 +10,15 @@ public class Programma1 {
 	public static void main(String[] args) {
 		
 		MySqlConnection mySqlConnection = MySqlConnection.getInstance();
+		
 		mySqlConnection.avviaConnessione();
 		
 		ProjectDAO prjDAO = new ProjectDAOimpl(mySqlConnection);
-		Project project1 = prjDAO.readProject("Pj001");
 		
+		
+		
+		Project project1 = prjDAO.readProject("Pj001");
+		System.out.println("fourth");
 		System.out.println(project1);
 		
 		
