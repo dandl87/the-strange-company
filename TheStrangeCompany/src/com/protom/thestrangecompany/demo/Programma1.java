@@ -18,7 +18,8 @@ public class Programma1 {
 		
 		
 		Project project1 = prjDAO.readProject("Pj001");
-		System.out.println("fourth");
+		
+		
 		System.out.println(project1);
 		
 		

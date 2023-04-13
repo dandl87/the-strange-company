@@ -13,7 +13,7 @@ public interface ProjectDAO {
 	boolean deleteProject(String projectCode);
 	
 	
-	ArrayList<Project> readAllProject(); 
+	ArrayList<Project> readAllProject();
 	
 
 }
