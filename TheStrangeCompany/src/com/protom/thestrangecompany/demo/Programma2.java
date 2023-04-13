@@ -1,5 +1,7 @@
 package com.protom.thestrangecompany.demo;
 
+import java.sql.PreparedStatement;
+
 import com.protom.thestrangecompany.dbconnections.MySqlConnection;
 import com.protom.thestrangecompany.service.Service;
 
